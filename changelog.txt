@@ -1,0 +1,399 @@
+v1.1 The frozen update part 1
+1-New crate. This one is different from the others, since it will reset your dimensions to open more crates. The pets are very rare but also drop in lots.
+2-New pets. Coming from the new crate, those pets are extremely, EXTREMELY powerful and are required to reach high levels to unlock new stuff. [The unobtainable pets will come in the 2nd part]
+3-New fighting area. You'll need a lot of stats to beat the strongest enemies.
+4-New stat buttons. Let those stats go br.
+5-New feature: Artifacts. ||These drop from fighting and grant bonuses that are uncapped. Areas 1-3 have few artifacts while area 4 has many of them||
+6-New shop upgrades. 5 Items that will make your numbers skyrocket.
+7-New ranks. These names reach up to level 1e18, so good luck with reaching them.
+8-New "Latest Drops" menu. The upgrade that removes pet alerts will now add all these drops to an array of [non-sorted] entries that keep track of drops and amounts. Closing the tab will reset the drops obtained.
+9-Bugfixes that have been done some by me and some through some pull requests [thank you all the contributors]
+
+
+v1.0.2.1 I'm dumb ONCE AGAIN 
+-Fixed a bug where the prestige crates would take your resources IF you don't have enough rather than when you have enough
+-Oh yea since I started working on the next content update you'll see some pets if you look into the pets folder
+
+v1.0.2 Some other rebalance changes - 14/09/2024
+-Added a link in the version number that redirects to the changelog file in github.com
+-Pet displays do not show the XPBoost stat (neither any future stat) unless they have that stat
+-Added an all dimensions multipliers to the best pets to make the dimensions section faster
+-Clicking a dimension now instantly clicks all lower ones in order (and without triggering their cooldowns)
+-Added 1-2 pets into legendary+ crates that come from previous crates, to make them easier to obtain for upgrades [stuff like red butterflies or fire spirits]
+
+v1.0.1.3 Fixing the previous version
+-I messed up slightly with implementing the "+1" buff/code change that it just didn't work
+-Fixed 2-3 instances where the alert still "fails" to implement the html to avoid abreviations from going into the next line
+-Added a x1.2 xp event for everyone as a reward from reaching 1k hours in galaxy.click in a single day
+
+v1.0.1.2 More silly things
+-Reduced the cost of the 2 XPBoost crates to 0.05 and 0.1 respectively
+-Remade the bulk pets system slightly to make it easier to add new logic to them
+-The "+1" upgrade now also affects the skeleton/ghost crates, many people said that these need a buff
+-I'll probably remake the display code a little bit better JUST to make it easier to make it display the bulk amount on each crate, maybe tomorrow
+
+v1.0.1.1 Silly things
+-Coins no longer scale across consecutive kills, they just additively stack (I hope so)
+-Made the fighting text clearer that it fights consecutive enemies
+
+v1.0.1 The rebalance update part 1 - 12/09/24
+1-XPBoost core concept has been changed
+  1.1-It is no longer a prestige
+  1.2-XPBoost buttons now scale in both rewards and time
+  1.3-Added 2 new XPBoost buttons that unlock between level 100 and level 400
+  1.4-Reduced the starting amount of XPBoost gained [to 0.01 for the first button]
+  1.5-Also divided by 10 the XPBoost gained from fighting [more details explained below]
+  1.6-In exchange, the XPBoost multipliers have been buffed
+    1.6.1-Crate 5 pets go from 1.01 to 1.5
+    1.6.2-Crate 6 pets go from 1.05 to 3
+    1.6.3-Crate 7 pets go from 1.5 to 10
+    1.6.4-The 4 upgrades that boosted XPBoost have been buffed to be +1000% (total, x11) coming from +50% (x1.5), alongside the +^0.025 to the exponent moving to +^0.05 to the "XPBoost substracts xp rather than resetting it" upgrade (which itself has been revamped completely)
+2-XP buttons have been changed too
+  2.1-Progression has been made smoother, and there's no in-betweens like buttons 8-10 that had decreasing xp and cooldowns but were way better than the big ones
+  2.2-Added 2 more XP buttons, alongside moved their unlocks slightly
+  2.3-These 12 buttons go from the default 1 xp/1 minute to 1000 xp/7 days
+3-Fighting has been made more interesting
+  3.1-Now you consecutively fight enemies until you die
+  3.2-Enemy stats get doubled after each consecutive kill
+  3.3-However, drops only get multiplied by 1.5
+  3.3-These get added to a counter that will be displayed when the player dies
+4-To make this more fair, anyone who would have recently performed an XPBoost reset will automatically have their level be set to their highest level (the conditions are simple and fair)
+5-I will be playing on a new save alongside the main one to see the changes myself, and I will probably release further balance patches related to pets and upgrade costs. Make sure to give feedback about these changes
+
+v1.0.0.1 Tiny fixes
+-Changed the text from 3 red butterflies to 2 "it was nerfed everywhere else but not in the upgrade costs"
+-Added a little "disclaimer" on one hint as you might have unlocked something else, and since the help tips are based on total unlocks... Maybe I rewrite that section later
+-Changed the upgrade 24 from 23 maxed upgrades to 22. Since seems like some people get stuck on one specific pet (ehem red butterflies), this little margin might make the new content more accessible
+
+v1.0 CHECK BACK'S OFFICIAL RELEASE! - 08/09/24 
+-First of all, this has become the official version for Check Back. No need to call it Check Back Mod anymore.
+-All the references towards a feature coming soon... it's here! Upgrade 24 is now available and it's not really that hard to obtain.
+-New feature inspired by Antimatter Dimensions but adapted to the core mechanic of Check Back
+-12 new upgrades that will make your numbers skyrocket into millions of levels
+-Also should have merged some fixes coming from Alderi's pull request, plus did some other tiny changes (Doing this after making sure the update is properly out)
+ -Fixed some typos
+ -Short notation "20 K" should no longer be automatically cut into a new line
+ -The upgrade that hides the pet popups has been re-coded to only show newly discovered pets from any crate
+ -Placeholder better shop costs display for the first upgrade
+ -Added new ranks going up to level 1 billion alongside an "XP to next rank" text rather than "total xp"
+Play here:
+https://marcelacoplao.github.io/CheckBackMod/
+https://galaxy.click/play/43 
+
+v0.9.3 Narrow screen adaptability - 18/07/24
+-Changes in the css have been done to make buttons scale properly with zoom and different screen sizes
+-A smoother flickering has been added + colors to each theme
+-This update has been done by @Alderi so huge thanks to him for contributing to this game
+-Corruption is affecting the space-time continuum and magic is gonna be needed for it. There may be a magic rank awaiting for you to get there (coming soon)
+
+v0.9.2.1D
+-Crates tab should now flicker when a crate is ready to use
+-Fighting tab flicker should also work properly
+
+v0.9.2 The tab update - 28/06/24
+Added content:
+-Added tabs! Buttons are now separated into sections, so you can see stuff like all xp buttons in the same place
+-Added tab related statistics! For each tab, you will see boosts that are related to whatever buttons you are seeing [like any xp multiplier and xp button cooldown modifiers in the xp tab]
+-Added statistics! Starting from this update, info like enemies killed and crates opened are tracked and can be seen by clicking "Display stats" [also brings you to the xp buttons tab, that's how it's coded]
+-Added a proper message system for things like unboxing pets or displaying what enemy are you fighting against [report if any bugs happen with this one and give suggestions]
+Balancing changes:
+-New skeleton and ghost pets that can be found after day 100 [also rarer skeleton/ghost pets are buffed in these "new" crates]
+-The daily rewards staff has received a significant buff [xp items will boost daily xp if you have this item, reaching a maximum of x30 daily xp at the moment]
+-Each discovered pet gives an additive +1% xp gain [to boost early game progression a little bit and to give an incentive to keep opening crates] [yes, there's a discovered pets stats]
+Other changes:
+-Did a bunch of improvements in the code to make adding more buttons easier [and can make stuff easier to deal with loops]
+-Fixed some typos and bugs I guess [and more to come I guess]
+-Some changes I might have done before june that I might have forgot are included in this update but they aren't in the changelog [or could have been released in v0.9.1.4/5 I don't know]
+-Manipulation of time is tearing down all the dimensions. Do not come alone, proceed with caution. Will you manage to fix the temporal rift? (coming soon)
+
+v0.9.1.3
+-How does someone break this much stuff, seriously
+
+v0.9.1.1
+-Fixed a bug when going below the level from your current highest unlock [with the progress to next unlock]
+
+v0.9.1
+-Did some changes in the xp to next level bar
+  -Once you reach level 1500 [the shop], the bar changes to "XP to next unlock", showing all the jump there is in terms of xp
+   -Therefore, when you reach the highest possible xp unlock [level 100k], the bar simply changes to "Total XP"
+-Some slight changes in 0.9.0.1 and 0.9.0.2 [Just realises I never pushed v0.9.0.2]
+
+v0.9.0.2
+-Added actual rarities to the enemies in the 3rd zone [they were all 20% each]
+
+v0.9.0.1
+-Fixed an issue with new saves
+
+v0.9 Update - A little bit of everything!
+-New crate!
+  -Unlocks at level 20k
+  -Costs 250 coins to open one [And has a base cooldown of 12h]
+  -Has some of the rarest pets and also the most busted ones. Good luck for anyone trying to get all of them.
+-New upgrades!
+  -You need level 20k to see these upgrades and to buy them
+  -These are quite expensive and require some of the new pets
+-New area!
+  -Unlocked at level 100k
+  -Has 5 new powerful enemies [loot focused on xp gains]
+-New stat button!
+  -Unlocked at level 50k
+  -Gives x4 the previous stats at just x6 the cooldown (20hp 2dmg 0.2 def / 6h)
+-Fixed some bugs related to cost upgrades
+-Better compatibility with older saves [mainly people importing from Demonin's original version]
+-Some themes have been tweaked slightly to look better. [Neon still on top]
+
+v0.8.0.1
+-Fixed a bug where the 4th upgrade would take something else instead of the actual pet
+
+v0.8 The Item Shop!
+-New feature unlocked at level 1500! The shop!
+  -Items in the shop have a cost, which is usually coins and some pets. They give an effect.
+  -Some of the effects are increased XP gain and increased XPBoost gain.
+  -Some of these items are more important, as they give QoL or new unlocks. They are more expensive though
+-New area
+  -6 strong enemies are waiting for you. They do give a bunch of coins
+-Many changes and improvements.
+  -Help button! Provides a quick guide on what to do.
+  -Stuff like the xpboost info is now being refreshed constantly rather than just when it updates [through in-game features and not console].
+  -Hidden stats, lost xp and highest level. No way to check them ingame but they do exist [it's gonna be on the save string and on console, possibly gonna be added in some other update].
+  -The "all unlocks" message now tells you what's considered endgame [and makes you expect a new update]
+   -Once you get to the shop, the game will tell you there's level unlocks at () or through other means [like an upgrade]
+   -Or that if you don't have all possible unlocks, but the remaining unlocks are non xp related, it hints that you should try look somewhere else
+-And more stuff and improvements, tell me if there's any issue with the game.
+  
+
+v0.7.0.5
+-Fighting tab button now has a visual indicator on when there's a fight ready [similar to daily reward]
+
+v0.7.0.4
+-Advanced pet crate [2nd one] had their rarities bugged, now fixed them [blue dragons were x11 as common]
+
+v0.7.0.3
+-Added the rounding display to XPBoost
+-Fixed an issue with levels if you would get to I believe past level 1m
+-Remade the rounding system slightly so it's easier to work with [has an exponent function]
+ -Has another tier of rounding for billions, then it would jump into scientific at trillions [or 1e12]
+
+v0.7.0.2
+-The enemy selected is set to 1 when you get to level 500 [also by default when you refresh], should fix a small issue with sometimes the button not working
+-Added the rounding to the daily rewards
+
+v0.7 Fighting update (And happy new year update)
+- Fixed a bug with prestige crates when you can't open them. Now it prevents you from dropping XPBoost below 1 [imagine opening one that costs 1.3 and getting a negative boost :skull:]
+- Added rounding to buttons. Now they will display "3542" as "3.5k" XP. Also added it to the pets tab [xp and xpboost boosts] and the new feature.
+- Added a softcap to XPBoost effect. After you reach 10, it will start increasing at square root rate [possible that in future updates it will get softer]
+- New feature unlocked at level 500: FIGHTING!
+  - Increase your stats (HP, DMG and DEF) through a new button with 1h cooldown
+  - Fighting tab
+   - Displays your current stats
+   - Allows you to start a combat in one area
+     - Combat system: 
+     1- You and the enemy deal damage based on their own damage and the receiver's defense
+     2- If the player deals no damage, the battle ends
+     3- If the enemy hp is below 0, the battle ends and it rolls rewards [they are based on a set tier and some of the enemy stats]
+     4- If the player hp is below 0, the battle ends
+     5- If the battle hasn't ended in any way, it goes back to step 1
+    - Has buttons to pick whatever area you wanna fight [Each area has some set of enemies with their rarities, hover over the button to display the rarities]
+    - 1st area is unlocked at level 500, enemies drop XP, coins [a new resource, no display and no use as of now] and XPBoost [only the boss]
+  - Enemies tab
+   - Displays all the enemies and the amount you've killed of each
+    - If you killed that enemy, you can hover over it to see their stats
+If there's any issues or you feel something's weird with balancing, let me know. This update took a while to make [more effective hours than 0.4] and I want you all to enjoy it
+
+v0.6.5 Improvement update
+-Visuals like the xp bar and selected pets are now fixed on the screen. Scrolling will only affect buttons
+-Pet XP Boosts were made simpler [compressed all xp-related things to only 1 stat]
+  -Some stats have been rebalanced slightly
+-Prestige button 3 buffed [2.5 --> 4 XPBoost]
+-Added Dancing Skeleton as filler pet for pet ID reasons [same odds as skeletal dragon/slightly weaker stats]
+-Special pets have been "removed" and now they are displayed after crate 6 as normal pets. To do the conversion, refresh 1-2 more times and click the "SpecialPet conversion" button.
+  -Code was made simpler
+Specifically in this update, let me know if there's any issues before I start working with the new feature
+
+v0.6 - Endgame Resurrection Festival Party Fiesta
+-2 New XP Buttons. Similar to the previous button, the cooldowns for these and the gains drop, but they are better than the normal ones.
+  - 33 xp // 6h
+  - 15 xp // 1h
+-1 New prestige crate. New pets that have transcended and gained the ability to boost your XPBoost gain. Along being more expensive.
+  - 2.5 XPBoost // ~268k xp
+-1 New XPBoost button. Go wild with farming this one
+-Call them "tier 2" buttons, and they have all been sorted. XPBoost are all together, xp 8-10 together and the 2 prestige crates also together.
+-Changed the XPBoost display [it no longer shows as %]
+-This was v0.5.0.1 but the 2 new buttons from v0.5 had been nerfed to be unlocked at levels 150 and 200, plus the prestige crate unlocking at 125.
+-Added new XP ranks... reaching level 50k with almost 2b xp to grind. Good luck
+-Note: Possibly adding a display of whenever the alerts show on a text, instead of using the alert function
+
+
+v0.5 - Numbers Go Up version
+-Added compatibility with older saves [updating a button cooldown that isn't defined will make it defined "I can do it for 25, and it creates slots from 0 to 25"]
+-Balancing!
+  -Buttons 2-6 are faster and button 7 gives more xp
+  -Any prestige for XPBoost has now a set cooldown of 1h... if you are good, enjoy speedrunning these
+  -Prestige crate 1 now unlocks at level 125
+  -Prestige crate 1 has an 1h cooldown. Have fun buying it
+-2 New buttons
+  -Level 200, gives 100xp every day
+  -Level 250, allows you to prestige for 1 XPBoost, also with 1h cooldown
+-Possibly some bugs are fixed
+
+
+v0.4.1.2 - Small Bugfix
+-Fixed skeletal crates giving the wrong pets [and possibly ghost crate also had the same issue, it doesn't now]
+
+v0.4.1.1 - Polishing part 2
+-Changed the pet color border for prestige crate.
+
+v0.4.1 - Polishing
+-Added names and icons to the prestige crate pets
+-Added an XPBoost display [will show in %, as 230% means x2.3]
+
+v0.4 - The comeback
+After a long time, I finally managed to fix the bug that was on my spine, thanks to boredom.
+-New crate with op pets. BUT! They cost some of your XPBoost. So I hope you've been able to grind these
+-Remade the special pets code slightly, they are now ID's 1 and 2, so anything bigger than 3 will be the normal pets [why you had to do this system demonin...]
+-New crate icon for upcoming similar pets
+
+
+v0.3.0.4
+-Fixed an important bug where daily rewards broke when having a special pet equipped [Reported by PSionJoule]
+
+v0.3.0.3
+-Added proper Credit Text (With links to my Discord server and Demonin's server + original version)
+-UnboxButtons 1-3 unique border was removed. All buttons look the same now (I might do later on an update that sets each button type a different color)
+
+v0.3.0.2
+-Slight bug fixed: buttonCooldowns 11 and 12 started as undefined and had to be updated manually
+
+v0.3.0.1
+-You can now see ingame you XPBoost (Shows in 1st button)
+-Added credit to Demonin
+
+v0.3.0
+-New feature: Prestige! [Kinda]
+  -When you reach level 100, you can reset for +20% XP multiplier
+    -Resets: Current XP
+    -Keep: Everything else (Pets, unlocks, dailyRewardDay)
+    -Text "You have an XPBoost of (value)" [Sadly not visible, use game.XPBoost to look in console]
+    -Small note about this: You are only able to reset once a day, and when you reach level 100
+    -Can be used as currency [v0.4.0]
+-Balancing to make the game faster (Also because you need a lot of XP to progress)
+  -All pet xp value has been doubled
+  -Pets now boost daily reward XP. The 1st xp value boosts the gain and the 2nd value boosts the cap
+-Changed title to "Check Back Mod" as it wasn't updated before
+-Current endgame: x2 XPBoost [Reset 5 times]
+
+v0.2.1
+-Added the new button (feature)
+  -Unlocks at level 100, and increases your XP gain, but resets your XP and unlocks (You keep pets and dailyRewardDay)
+  -New variable, game.XPBoost which increases whenever you click this new button. As it says, it boosts xp gain
+  -New text
+-Pet xp boost x2
+-Buffed dailyRewardXP
+-Changed title to "Check Back Mod" which apparently I didn't before
+
+
+v0.2.0.2
+-Epic crate unlocks at level 20 (previous: level 25)
+-This line is just so I can push something again and see if it updates
+
+v0.2.0.1
+-Legendary crate icon
+
+Full patch notes (v0.2.0)
+-Mod exists
+-2 new xp buttons
+  -Button6 (Unlocked at level 35, gives 50 xp, 3d cooldown)
+  -Button7 (Unlocked at level 70, gives 150 xp, 7d cooldown)
+-New crate (legendary crate)
+  -9 New unique and powerful pets. They wait you at halfway to level 100
+  -Rarest pet is 0.12% (1/833)
+  -2d cooldown
+-The rarest skeleton/ghost pets have been made rarer (Like twice as rare)
+-All pet stats have been balanced (tweaked then buffed)
+-Levels scale faster (harder to level up)
+  -Unlocks are some level sooner
+  -Overall early game is harder
+  -Daily xp rewards cap later (around day 400)
+-Bugfixing (Credit to Demonin and Jacorb with this part)
+-Current endgame: Level 100 (When new feature comes in on next update)
+Note: This mod uses different balancing from the main game. If you load your main save, you will not experience the intended balancing.
+
+v0.1.6
+-Polishing
+-Actually, really nothing here, just some final stuff before release
+-Added discord user
+
+v0.1.5
+-Added border to pet list
+-Added new exp button (level 70, 150 exp, 7d)
+-Bugfixing (credit to Jacorb)
+-Added funny text to pets (look at constants.js but there's spoilers of pet stats)
+-Nothing really important but daily reward xp is "uncapped" (Caps after nearly 390 days)
+
+v0.1.4
+-Buffed all pets (slightly)
+-Fixed a bug
+
+v0.1.3
+-Balancing changes
+ -Skeleton and Ghost rare pets are nearly half as rare (they are buffed too)
+ -Adjusted pet stats and rarities
+ -Added stats to t4 pets
+ -Level formula is slower (levels are harder to get)
+    -Adjusted unlock levels
+
+v0.1.2
+-Trying to add a new crate (legendary crate)
+-9 pets
+-2d cooldown
+-Rarest pet: 0.12% (1/833)
+
+v0.1.1 (1st version from Marc)
+-Mod exists
+-Exp button6 Added
+-Moved all pet and daily cooldowns array by 1
+
+
+v0.4.0 (Last version from Demonin)
+-Added an epic pet unbox button with 9 new pets! (unlocks at level 30)
+-Added a daily reward system with two new crate types, each with 8 new pets! (unlocks at level 8)
+
+v0.3.2
+-Hopefully actually fixed the XP display being wrong
+
+v0.3.1
+-Added 3 new themes (green, purple, red) that unlock at level 20
+
+v0.3.0
+-Added an advanced pet unbox button with 7 new pets! (unlocks at level 15)
+-Added another super rare basic pet (Green dragon)
+
+v0.2.2
+-Fixed XP display being wrong when players were within 1 XP of the next level
+
+v0.2.1
+-Made some minor visual improvements to pet stuff
+-Basic pet button cooldown reduced from 3 hours to 2 hours
+
+v0.2.0
+-Added pets! (Unlock at level 8)
+-There are currently 5 pets that con be obtained, each of which give different bonuses
+
+v0.1.4
+-The buttons now tick down while offline!
+-Made the neon theme unlock eatlier
+
+v0.1.3
+-I don't remember what the fuck I did for this update
+
+v0.1.2
+-Added a new unlockable theme (neon)
+
+v0.1.1
+-Added the 6 hour and 24 hour buttons
+-Added some fancy level backgrounds at really high levels
+-Added the ability to switch between light and dark theme
+
+v0.1.0
+-Made the game lol
+-Only 3 buttons (1 minute, 10 minutes, 1 hour)
