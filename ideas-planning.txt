@@ -39,10 +39,9 @@ Nerfed edition nerfs:
   -Cooldowns go from 1h/14d to 2h/30d
 -Fighting nerfs
   -Enemy stat scaling becomes 3^x instead of 2^x
-  -Consecutive kills reward scaling becomes 1.3^x instead of 1.5^x (For coins it's 0.8 base)
+  -Consecutive kills reward scaling becomes 1.3^x instead of 1.5^x (For coins it's 0.8 base, so the 10th kill actually gives less coins than the 1st kill)
 -Shop nerfs
-  -All cost reductions done previously have been reverted (this was intended to be done after shop costs were rebalanced)
-  -Furthermore, costs have been increased
+  -Costs for upgrades 1-18 and maybe some others have been buffed
   -Few formula-based upgrades have been nerfed too
 -Dimensions nerfs
   -Base multiplier is x0.5
@@ -54,6 +53,6 @@ Nerfed edition nerfs:
   -Scaling is now 3^x instead of 2^x
 -Artifacts nerfs
   -Removed guarantee drop on 10th kill
-  -Some effects have been nerfed
+  -Some effects have been nerfed (Did I do this... or not? Yea I think not)
 -Frozen crate nerfs
-  -Formula scales slightly worse
+  -Formula scales slightly worse ((a^2)/20 --> /50)

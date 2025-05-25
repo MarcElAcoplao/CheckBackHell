@@ -506,7 +506,7 @@ else {
   player.ranks = i
   document.getElementById("rank").innerHTML= ranks[i][1] + " clicker"
   //Sets the "XP to next level" text
-  if (player.level < 1500) { //Before level 1500
+  if (player.level < 500) { //Before level 1500
   XPToNextLevel = levelToXP(player.level + 1) - levelToXP(player.level)
   ProgressToNextLevel = player.XP - levelToXP(player.level)
   document.getElementById("XPBarText").innerHTML = "XP to next level: " + xpShort(ProgressToNextLevel) + "/" + xpShort(XPToNextLevel)
